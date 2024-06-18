@@ -1,0 +1,168 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Analyzer</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        video {
+            max-width: 100%;
+            margin: 20px 0;
+        }
+        #result, #progress {
+            margin-top: 20px;
+        }
+    </style>
+</head> -->
+<!-- <body>
+    <h1>Image Analyzer</h1>
+    <video id="video" controls>
+        <source src="public/waffle-preview-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <img id="targetImage" src="public/waffle-preview-image.png" style="display: none;">
+    <p id="result">Processing...</p>
+    <p id="progress"></p>
+</body> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Analyzer</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/ffmpeg.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #result, #progress {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Analyzer</h1>
+    <input type="text" id="videoUrl" placeholder="Enter YouTube video URL">
+    <button id="analyzeBtn">Analyze</button>
+    <img id="targetImage" src="public/itsub-thumbnail.jpg" style="display: none;">
+    <p id="result">Processing...</p>
+    <p id="progress"></p>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Analyzer Grid</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, auto);
+            gap: 20px;
+            width: 90%;
+        }
+        .grid-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        video {
+            max-width: 100%;
+            margin: 10px 0;
+        }
+        img {
+            display: none;
+        }
+        #result, #progress {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Analyzer Grid</h1>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h2>Image Analyzer 1</h2>
+            <video id="video1" controls>
+                <source src="public/itsub.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img id="targetImage1" src="public/itsub-thumbnail.jpg">
+        </div>
+        <div class="grid-item">
+            <h2>Image Analyzer 2</h2>
+            <video id="video2" controls>
+                <source src="public/itsub.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img id="targetImage2" src="public/itsub-thumbnail.jpg">
+        </div>
+        <div class="grid-item">
+            <h2>Image Analyzer 3</h2>
+            <video id="video3" controls>
+                <source src="public/itsub.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img id="targetImage3" src="public/itsub-thumbnail.jpg">
+        </div>
+        <div class="grid-item">
+            <h2>Image Analyzer 4</h2>
+            <video id="video4" controls>
+                <source src="public/itsub.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img id="targetImage4" src="public/itsub-thumbnail.jpg">
+        </div>
+        <div class="grid-item">
+            <h2>Image Analyzer 5</h2>
+            <video id="video5" controls>
+                <source src="public/itsub.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img id="targetImage5" src="public/itsub-thumbnail.jpg">
+        </div>
+    </div>
+    <p id="result">Processing...</p>
+    <p id="progress"></p>
+</body>
+</html>
